@@ -29,16 +29,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-fj-xJ1">
                                         <rect key="frame" x="0.0" y="174" width="134" height="134"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="iUk-fj-xJ1" secondAttribute="height" multiplier="1:1" id="d3B-UE-Ds8"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-Ui-Dlm">
                                         <rect key="frame" x="0.0" y="348" width="134" height="134"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="GcN-Ui-Dlm" secondAttribute="height" multiplier="1:1" id="o4x-4O-i0R"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -64,7 +58,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sWD-uV-wBj" secondAttribute="bottom" constant="80" id="2in-cX-ALm"/>
                             <constraint firstItem="Vdn-UA-grx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7U6-95-ASe"/>
                             <constraint firstItem="sWD-uV-wBj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AZ7-gn-XWx"/>
-                            <constraint firstItem="Vdn-UA-grx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="67:448" id="GoY-gg-wBh"/>
+                            <constraint firstItem="Vdn-UA-grx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.537946" id="YOI-W3-ChT"/>
                             <constraint firstItem="Vdn-UA-grx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="d1r-n5-N4v"/>
                         </constraints>
                     </view>
