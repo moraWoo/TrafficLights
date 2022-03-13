@@ -19,23 +19,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-UA-grx">
                                 <rect key="frame" x="140" y="84" width="134" height="482"/>
                                 <subviews>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WE8-78-uwn">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WE8-78-uwn">
                                         <rect key="frame" x="0.0" y="0.0" width="134" height="134"/>
                                         <color key="backgroundColor" red="0.89000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WE8-78-uwn" secondAttribute="height" multiplier="1:1" id="wjB-ng-3Yx"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-fj-xJ1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-fj-xJ1">
                                         <rect key="frame" x="0.0" y="174" width="134" height="134"/>
-                                        <color key="backgroundColor" red="0.89000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iUk-fj-xJ1" secondAttribute="height" multiplier="1:1" id="d3B-UE-Ds8"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-Ui-Dlm">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-Ui-Dlm">
                                         <rect key="frame" x="0.0" y="348" width="134" height="134"/>
-                                        <color key="backgroundColor" red="0.89000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GcN-Ui-Dlm" secondAttribute="height" multiplier="1:1" id="o4x-4O-i0R"/>
                                         </constraints>
@@ -50,9 +50,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7H-Ai-3wR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +71,7 @@
                     <connections>
                         <outlet property="greenLight" destination="GcN-Ui-Dlm" id="RMZ-bE-hnc"/>
                         <outlet property="redLight" destination="WE8-78-uwn" id="h8s-Ww-REs"/>
+                        <outlet property="trafficLightButton" destination="sWD-uV-wBj" id="tau-bT-IA2"/>
                         <outlet property="yellowLight" destination="iUk-fj-xJ1" id="9wI-4J-Fjq"/>
                     </connections>
                 </viewController>
@@ -79,6 +83,12 @@
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
